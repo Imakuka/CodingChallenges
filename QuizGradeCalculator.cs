@@ -13,7 +13,6 @@ public class QuizGradeCalculator : MonoBehaviour
     Bonus: Add support for unlimted quiz grades and create support to specify how many and automatically assign values to them and calculate the average grade.*/
 
     [SerializeField] private float[] _quizGrades;
-
     [SerializeField] private float _quizGradeAverage;
     [SerializeField] private int _numberOfQuizes;
     [SerializeField] private float _sum, _average;
@@ -26,7 +25,7 @@ public class QuizGradeCalculator : MonoBehaviour
        
         QuizGradeGenerator(_numberOfQuizes);
         QuizGradeAverage();
-        GradeAssiagn();
+
     }
 
     private void QuizGradeGenerator(int numberOfQuizes)
@@ -69,9 +68,5 @@ public class QuizGradeCalculator : MonoBehaviour
 
     }
 
-    private void GradeAssiagn()
-    {
 
-
-    }
 }
