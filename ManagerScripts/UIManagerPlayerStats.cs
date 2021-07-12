@@ -29,24 +29,24 @@ public class UIManagerPlayerStats : MonoBehaviour
 
     private void OnEnable()
     {
-        Player.onStartStats += OnStartStats;
+        //Player.onStartStats += OnStartStats;
     }
 
     public void OnStartStats(GameObject player)
     {
-       var newPlayer = player.gameObject.GetComponent<Player>();
+       /*var newPlayer = player.gameObject.GetComponent<Player>();
         _playerStats[0].text = "Player Name: " + newPlayer.playerName;
         _playerStats[1].text = "Attack Level: " + newPlayer.attackLevel;
         _playerStats[2].text = "Magic Level: " + newPlayer.magicLevel;
         _playerStats[3].text = "Smithing Level: " + newPlayer.smithingLevel;
-        _playerStats[4].text = "Mining Level: " + newPlayer.miningLevel;
+        _playerStats[4].text = "Mining Level: " + newPlayer.miningLevel;*/
 
     }
 
 
     private void OnDisable()
     {
-        Player.onStartStats -= OnStartStats;
+        //Player.onStartStats -= OnStartStats;
     }
     
 
